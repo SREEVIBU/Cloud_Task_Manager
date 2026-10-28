@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #edf2fa; background: #0b1120; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(ellipse at 50% 0%, #172849 0%, #0b1120 52%); }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.page { max-width: 780px; margin: auto; padding: 26px 24px 32px; }
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -.3px; }
+.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: #9cf2ca; color: #09251a; font-weight: 800; }
+.live { display: flex; align-items: center; gap: 7px; color: #a7b8cf; font-size: 12px; border: 1px solid #263650; border-radius: 20px; padding: 7px 11px; }
+.live span { width: 7px; height: 7px; border-radius: 50%; background: #69e5a8; box-shadow: 0 0 10px #69e5a8; }
+.hero { padding: 64px 0 30px; }
+.eyebrow { color: #8de9bd; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+h1 { font-family: Manrope, sans-serif; font-size: clamp(42px, 8vw, 66px); line-height: 1.06; letter-spacing: -3px; margin: 14px 0; }
+h1 span { color: #9cf2ca; }
+.subtitle { max-width: 490px; color: #aab8cb; line-height: 1.7; font-size: 15px; }
+.panel { background: #111b2d; border: 1px solid #27354c; border-radius: 20px; padding: 24px; box-shadow: 0 24px 70px #0003; }
+.panel-heading { display: flex; align-items: center; justify-content: space-between; }
+h2 { margin: 0; font-size: 20px; }
+.panel-heading p { margin: 6px 0 0; color: #93a2b8; font-size: 13px; }
+.count { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px; background: #1e3047; color: #a0f0ca; font-weight: 700; }
+.add-form { display: flex; gap: 10px; margin: 23px 0 18px; }
+.add-form input { min-width: 0; flex: 1; border: 1px solid #34445d; background: #0b1424; color: #f2f6fb; border-radius: 11px; padding: 13px 14px; outline: none; }
+.add-form input:focus { border-color: #8de9bd; box-shadow: 0 0 0 3px #8de9bd18; }
+.add-form input::placeholder { color: #718198; }
+.add-form button { border: 0; border-radius: 11px; padding: 0 16px; background: #9cf2ca; color: #0b2a1c; font-weight: 700; white-space: nowrap; }
+.add-form button:disabled { opacity: .55; cursor: not-allowed; }
+.task-list { list-style: none; padding: 0; margin: 0; }
+.task { display: flex; align-items: center; gap: 13px; border-top: 1px solid #26354b; padding: 15px 2px; }
+.check { width: 22px; height: 22px; flex: 0 0 22px; border: 1px solid #53647d; border-radius: 7px; background: transparent; color: #0c2017; font-weight: 800; }
+.done .check { background: #9cf2ca; border-color: #9cf2ca; }
+.task-title { flex: 1; overflow-wrap: anywhere; font-size: 14px; }
+.done .task-title { color: #78899f; text-decoration: line-through; }
+.delete { background: transparent; border: 0; color: #8494aa; font-size: 23px; padding: 0 5px; }
+.delete:hover { color: #ff8d9b; }
+.empty { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 30px 8px; color: #93a2b8; font-size: 13px; }
+.empty span { font-size: 27px; color: #9cf2ca; }
+.empty strong { color: #dfe8f4; font-size: 14px; }
+.empty p { margin: 0; }
+.error { color: #ffb7c0; background: #52273355; border: 1px solid #80404d; padding: 11px; border-radius: 9px; font-size: 13px; margin-bottom: 12px; }
+.refresh { margin-top: 18px; background: transparent; color: #a8b8ce; border: 1px solid #34445d; border-radius: 9px; padding: 9px 12px; font-size: 12px; }
+.refresh:hover { border-color: #9cf2ca; color: #9cf2ca; }
+footer { display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; padding: 27px 0 0; color: #6f819a; font-size: 10px; font-weight: 700; letter-spacing: 1px; }
+footer i { width: 4px; height: 4px; border-radius: 50%; background: #8de9bd; }
+footer p { width: 100%; text-align: center; margin: 2px 0 0; font-weight: 400; letter-spacing: 0; font-size: 12px; }
+@media (max-width: 520px) { .page { padding: 20px 15px; } .hero { padding-top: 48px; } .panel { padding: 17px; } .add-form { flex-direction: column; } .add-form button { padding: 13px; } h1 { letter-spacing: -2px; } }
